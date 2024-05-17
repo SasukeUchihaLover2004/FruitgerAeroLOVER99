@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruitger Aero Lover</title>
+    <style>
+        body {
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        button {
+            margin: 20px;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="toggleButton" onclick="toggleDarkMode()">Modo Escuro</button>
+
+    <h1>Fruitger Aero</h1>
+    
+    <p>Fruitger Aero é um conceito de design visual que combina elementos futuristas com influências retrô, criando uma estética única e cativante.</p>
+    
+    <h2>Origem do Fruitger Aero</h2>
+    
+    <p>O termo Fruitger Aero surgiu na década de 2000, inspirando-se nas interfaces gráficas e nas tendências de design daquela época, especialmente em videogames e interfaces de usuário.</p>
+    
+    <h3>Características do Design</h3>
+    
+    <p>Entre as principais características do Fruitger Aero estão o uso de gradientes, transparências, cores vibrantes e elementos tridimensionais que evocam um sentimento de futurismo.</p>
+
+    <h2>Aplicações do Fruitger Aero</h2>
+    
+    <p>Esse estilo de design é amplamente utilizado em mídias digitais, incluindo websites, aplicativos móveis e campanhas publicitárias, para atrair uma audiência moderna e tecnológica.</p>
+    
+    <h3>Exemplos Notáveis</h3>
+    
+    <p>Alguns exemplos notáveis de Fruitger Aero podem ser encontrados em jogos de vídeo como Wipeout e nas interfaces de sistemas operacionais dos anos 2000, como o Windows Vista.</p>
+
+    <h3>Influências e Evolução</h3>
+    
+    <p>O Fruitger Aero continua a evoluir, incorporando novas tendências tecnológicas e estéticas, mas mantendo seu núcleo de design futurista e atraente.</p>
+
+    <script>
+        function toggleDarkMode() {
+            var body = document.body;
+            var button = document.getElementById('toggleButton');
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                button.textContent = 'Modo Claro';
+            } else {
+                button.textContent = 'Modo Escuro';
+            }
+        }
+    </script>
+
+</body>
+</html>
+
